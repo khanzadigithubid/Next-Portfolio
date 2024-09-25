@@ -5,7 +5,7 @@ declare namespace JSX {
         'chat-title': string;
         'agent-id': string;
         'language-code': string;
-        [key: string]: any;  
+        [key: string]: [];  
       };
     }
   }

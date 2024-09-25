@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import HomeComponent from "./Home/page"; // Rename this import to avoid conflicts
 import About from "./About/page";
 import Projects from "./Projects/page";
