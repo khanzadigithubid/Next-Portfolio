@@ -197,10 +197,6 @@ export default function Contact() {
                           </svg>
                         </div>
                       </div>
-                      <div className="ml-6 grow">
-                        <p className="mb-2 font-bold ">Land line</p>
-                        <p className="text-white"> (0211) 431 2030</p>
-                      </div>
                     </div>
                   </div>
                   <div className="w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:mb-12 xl:w-6/12">
@@ -222,10 +218,6 @@ export default function Contact() {
                             />
                           </svg>
                         </div>
-                      </div>
-                      <div className="ml-6 grow">
-                        <p className="mb-2 font-bold ">Whatsapp Contact</p>
-                        <p className="text-white">+92 3163615343</p>
                       </div>
                     </div>
                   </div>
