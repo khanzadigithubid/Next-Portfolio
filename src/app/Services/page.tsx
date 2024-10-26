@@ -6,11 +6,11 @@ import Link from "next/link";
 export default function Services() {
   return (
     <>
-      <section className="text-gray-800 body-font py-24 animate-light-gradient">
+      <section className="text-gray-800 body-font py-24 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-20">
             <h1 className="flex justify-center items-center pb-14 text-5xl font-serif font-bold text-gray-900 hover:text-blue-500 transition duration-300 ease-in-out animate-bounce hover:uppercase">
-              <span className="text-blue-400 font-serif">Services</span>
+              <span className="text-gray-700-400 font-serif">Services</span>
             </h1>
           </div>
           <div className="flex flex-wrap -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
@@ -66,16 +66,7 @@ export default function Services() {
       </section>
 
       <style jsx>{`
-        @keyframes lightGradientAnimation {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        .animate-light-gradient {
-          background: linear-gradient(270deg, #f0e68c, #ffffff);
-          background-size: 400% 400%;
-          animation: lightGradientAnimation 15s ease infinite;
-        }
+        // Removed the keyframes and animation as the background is now static
       `}</style>
     </>
   );
