@@ -48,9 +48,9 @@ export default function Skills() {
   }, []);
 
   return (
-    <section className="animate-background bg-gradient-to-b from-gray-800 to-slate-600 text-gray-100 body-font py-24">
+    <section className="bg-white text-gray-800 body-font py-24"> {/* Set solid white background */}
       <div className="container px-6 mx-auto">
-        <h1 className="flex justify-center items-center pb-14 text-5xl font-serif font-bold text-white hover:text-lime-500 transition duration-300 ease-in-out">
+        <h1 className="flex justify-center items-center pb-14 text-5xl font-serif font-bold text-gray-800 hover:text-lime-500 transition duration-300 ease-in-out">
           Skills
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
@@ -60,8 +60,8 @@ export default function Skills() {
             colorClass="bg-gradient-to-r from-orange-300 to-orange-600"
             svgIcon={
               <div className="text-white">
-            <FaHtml5 size={80} />
-            </div>}
+                <FaHtml5 size={80} />
+              </div>}
             dataAos="fade-up"
           />
           <SkillCard
@@ -70,8 +70,8 @@ export default function Skills() {
             colorClass="bg-gradient-to-r from-blue-300 to-blue-600"
             svgIcon={
               <div className="text-white">
-            <FaCss3Alt size={80} />
-          </div>}
+                <FaCss3Alt size={80} />
+              </div>}
             dataAos="fade-up"
             dataAosDelay="100"
           />
@@ -81,8 +81,8 @@ export default function Skills() {
             colorClass="bg-gradient-to-r from-teal-300 to-teal-600"
             svgIcon={
               <div className="text-white">
-            <SiTailwindcss size={80} />
-            </div>}
+                <SiTailwindcss size={80} />
+              </div>}
             dataAos="fade-up"
             dataAosDelay="200"
           />
@@ -92,8 +92,8 @@ export default function Skills() {
             colorClass="bg-gradient-to-r from-yellow-300 to-yellow-600"
             svgIcon={
               <div className="text-white">
-            <FaJsSquare size={80} />
-            </div>}
+                <FaJsSquare size={80} />
+              </div>}
             dataAos="fade-up"
             dataAosDelay="300"
           />
@@ -103,8 +103,8 @@ export default function Skills() {
             colorClass="bg-gradient-to-r from-blue-400 to-indigo-800"
             svgIcon={
               <div className="text-white">
-            <SiTypescript size={80} />
-            </div>}
+                <SiTypescript size={80} />
+              </div>}
             dataAos="fade-up"
             dataAosDelay="400"
           />
@@ -114,8 +114,8 @@ export default function Skills() {
             colorClass="bg-gradient-to-r from-cyan-300 to-cyan-600"
             svgIcon={
               <div className="text-white">
-            <FaReact size={80} />
-          </div>}
+                <FaReact size={80} />
+              </div>}
             dataAos="fade-up"
             dataAosDelay="500"
           />
@@ -125,8 +125,8 @@ export default function Skills() {
             colorClass="bg-gradient-to-r from-gray-700 to-gray-900"
             svgIcon={
               <div className="text-white">
-            <SiNextdotjs size={80} />
-            </div>}
+                <SiNextdotjs size={80} />
+              </div>}
             dataAos="fade-up"
             dataAosDelay="600"
           />
@@ -136,25 +136,17 @@ export default function Skills() {
             colorClass="bg-gradient-to-r from-green-500 to-green-800"
             svgIcon={
               <div className="text-white">
-            <FaNodeJs size={80} />
-            </div>}
+                <FaNodeJs size={80} />
+              </div>}
             dataAos="fade-up"
             dataAosDelay="700"
           />
         </div>
       </div>
 
+      {/* Remove the background animation styles */}
       <style jsx>{`
-        @keyframes backgroundAnimation {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        .animate-background {
-          background: linear-gradient(270deg, #4a4e69, #9a8c98, #c9ada7);
-          background-size: 400% 400%;
-          animation: backgroundAnimation 15s ease infinite;
-        }
+        // You can remove the entire keyframes and animation if not needed
       `}</style>
     </section>
   );
