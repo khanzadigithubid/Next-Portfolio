@@ -8,11 +8,11 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="animate-background text-gray-800 body-font">
+    <section className="bg-white text-gray-800 body-font"> {/* Set solid white background */}
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center animate-fadeIn">
           
-          <h1 className="title-font text-5xl mb-5 text-pink-600 font-serif font-bold ml-5 hover:text-gray-800 transition-all duration-500 transform hover:scale-110">
+          <h1 className="title-font text-5xl mb-5 text-pink-700 font-serif font-bold ml-5 hover:text-black transition-all duration-500 transform hover:scale-110">
             <div>
               <h1 className="flex justify-center items-center">Hello,</h1>
               <Typewriter
@@ -24,7 +24,7 @@ const Hero = () => {
               />
             </div>
           </h1>
-          <p className="mb-8 leading-relaxed ml-10 text-gray-700"
+          <p className="mb-8 leading-relaxed ml-10 text-black"
              data-aos="fade-up" 
              data-aos-easing="ease-out-cubic"
              data-aos-duration="1500">
@@ -61,17 +61,9 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Remove the background animation styles */}
       <style jsx>{`
-        @keyframes backgroundAnimation {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        .animate-background {
-          background: linear-gradient(270deg, #e1f5fe, #ffe0b2, #fff9c4);
-          background-size: 400% 400%;
-          animation: backgroundAnimation 15s ease infinite;
-        }
+        // You can remove the entire keyframes and animation if not needed
       `}</style>
     </section>
   );
